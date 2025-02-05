@@ -11,6 +11,7 @@ import SwiftUI
 
 struct ContentView: View {
     let str = Optional<String>("test")
+    let optionalStr = Optional<String>("test")
     
     var body: some View {
         VStack {
@@ -25,6 +26,7 @@ struct ContentView: View {
                 }
             } label: {
                 Text(str!.lowercased())
+                Text(optionalStr!.lowercased())
             }
         }
         .padding()
