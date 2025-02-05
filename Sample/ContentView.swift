@@ -10,8 +10,11 @@ import SwiftUI
 import SwiftUI
 
 struct ContentView: View {
-    let str = Optional<String>("test")
-    let optionalStr = Optional<String>("test")
+    let optionalString = Optional<String>("test")
+    let optionalString2 = "1"
+    let optionalString3: String?
+    let optionalString4 = Optional<String>("test")
+    let optionalString5 = Optional<String>("test")
     
     var body: some View {
         VStack {
@@ -20,13 +23,16 @@ struct ContentView: View {
                 .foregroundStyle(.tint)
             Text("Hello, world!")
             Button {
-                print(str!)
-                if let optionalString = str {
+                print(optionalString!)
+                if let optionalString = optionalString {
                     print(optionalString)
                 }
+                Int(optionalString2)!
             } label: {
-                Text(str!.lowercased())
-                Text(optionalStr!.lowercased())
+                Text(optionalString!)
+                Text(optionalString3!)
+                Text(optionalString4!)
+                Text(optionalString5!)
             }
         }
         .padding()
