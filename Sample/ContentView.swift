@@ -21,9 +21,10 @@ struct ContentView: View {
             Button {
                 print(optionalString!)
                 if let optionalString = optionalString {
-                    print(value)
+                    print(optionalString)
                 }
             } label: {
+                Text(optionalString!)
             }
         }
         .padding()
