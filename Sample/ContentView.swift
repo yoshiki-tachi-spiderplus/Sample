@@ -11,6 +11,8 @@ import SwiftUI
 
 struct ContentView: View {
     let optionalString = Optional<String>("test")
+    let optionalString2 = Optional<String>("test")
+    let optionalString3: String?
     
     var body: some View {
         VStack {
@@ -25,6 +27,7 @@ struct ContentView: View {
                 }
             } label: {
                 Text(optionalString!)
+                Text(optionalString3!)
             }
         }
         .padding()
