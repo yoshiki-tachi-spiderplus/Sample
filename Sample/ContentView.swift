@@ -20,6 +20,9 @@ struct ContentView: View {
             Text("Hello, world!")
             Button {
                 print(optionalString!)
+                if let optionalString = optionalString {
+                    print(value)
+                }
             } label: {
             }
         }
