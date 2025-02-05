@@ -13,6 +13,7 @@ struct ContentView: View {
     let optionalString = Optional<String>("test")
     let optionalString2 = Optional<String>("test")
     let optionalString3: String?
+    let optionalString4 = Optional<String>("test")
     
     var body: some View {
         VStack {
@@ -28,6 +29,7 @@ struct ContentView: View {
             } label: {
                 Text(optionalString!)
                 Text(optionalString3!)
+                Text(optionalString4!)
             }
         }
         .padding()
