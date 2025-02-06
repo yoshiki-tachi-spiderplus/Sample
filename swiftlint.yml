@@ -1,0 +1,47 @@
+disabled_rules: # ここに無効にしたいルールを追加します
+
+opt_in_rules: # ここに有効にしたいオプトインルールを追加します
+  - empty_count
+  - explicit_init
+
+included: # ここに解析対象のファイルやディレクトリを追加します
+  - Sample
+
+excluded: # ここに解析対象外のファイルやディレクトリを追加します
+
+# 各ルールのカスタマイズ
+line_length:
+  warning: 120
+  error: 200
+
+trailing_whitespace:
+  ignores_empty_lines: true
+  ignores_comments: true
+
+force_unwrapping:
+  severity: error
+
+nesting:
+  type_level: 2
+  severity: warning
+
+identifier_name:
+  min_length: 2
+
+cyclomatic_complexity:
+  warning: 10
+  error: 20
+
+function_body_length:
+  warning: 20
+  error: 100
+
+
+# ファイルごとの設定
+custom_rules:
+  no_tabs: # ルール名
+    included: ".*\\.swift" # 対象ファイル
+    name: "No Tabs" # ルールの表示名
+    regex: "\\t" # ルールの正規表現
+    message: "タブ文字が含まれています" # 警告メッセージ
+    severity: error # 警告のレベル
