@@ -13,7 +13,7 @@ struct ContentView: View {
     let optionalString = Optional<String>("test")
     let optionalString2 = "1"
     let optionalString3: String?
-    let optionalString4 = Optional<String>("test")
+    let optionalString4: String? = "test"
     let optionalString5 = Optional<String>("test")
     
     var body: some View {
