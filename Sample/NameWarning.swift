@@ -8,6 +8,10 @@
 import Foundation
 
 final class test_NameWorning {
+    private let _myLet = 0
+    private func _myFunc() {}
+    let URL: NSURL? = nil
+    URL!.absoluteString
     func testMethod2(a: Int, b: Int, c: Int, d: Int, e: Int, f: Int, g: Int) {
         if a == 0 {
             if b == 1 {
