@@ -3,6 +3,13 @@ disabled_rules: # ここに無効にしたいルールを追加します
 opt_in_rules: # ここに有効にしたいオプトインルールを追加します
   - empty_count
   - explicit_init
+  - line_length
+  - trailing_whitespace
+  - force_unwrapping
+  - nesting
+  - identifier_name
+  - cyclomatic_complexity
+  - function_body_length
 
 included: # ここに解析対象のファイルやディレクトリを追加します
   - Sample
