@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class test_NameWorning {
+class test_NameWorning {
     func testMethod2(a: Int, b: Int, c: Int, d: Int, e: Int, f: Int, g: Int) {
         if a == 0 {
             if b == 1 {

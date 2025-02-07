@@ -7,7 +7,6 @@ disabled_rules: # ここに無効にしたいルールを追加します
   - comma
   - compiler_protocol_init
   - control_statement
-  - custom_rules
   - deployment_target
   - discarded_notification_center_observer
   - discouraged_direct_init
@@ -23,7 +22,6 @@ disabled_rules: # ここに無効にしたいルールを追加します
   - function_parameter_count
   - generic_type_name
   - implicit_getter
-  - inert_defer
   - is_disjoint
   - large_tuple
   - leading_whitespace
@@ -69,7 +67,6 @@ disabled_rules: # ここに無効にしたいルールを追加します
   - vertical_parameter_alignment
   - vertical_whitespace
   - void_return
-  - weak_computed_property
   - weak_delegate
   - xctfail_message
 
@@ -103,7 +100,6 @@ force_unwrapping:
 
 nesting:
   type_level: 2
-  severity: warning
 
 identifier_name:
   min_length: 2
