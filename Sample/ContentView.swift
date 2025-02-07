@@ -11,7 +11,7 @@ import SwiftUI
 
 struct ContentView: View {
     let optionalString = Optional<String>("test")
-    
+    let optionalString2 = Optional<String>("test")
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -25,6 +25,7 @@ struct ContentView: View {
                 }
             } label: {
                 Text(optionalString!)
+                Text(optionalString2!)
             }
         }
         .padding()
@@ -43,6 +44,17 @@ extension ContentView {
         
         if count == 0 {
             count += 1
+            if count2 == 1 {
+                count += 1
+                if count3 == 2 {
+                    count += 1
+                    if count4 == 3 {
+                        count += 1
+                    } else {
+                        count -= 1
+                    }
+                }
+            }
             if count2 == 1 {
                 count += 1
                 if count3 == 2 {
