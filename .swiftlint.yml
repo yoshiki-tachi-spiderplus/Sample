@@ -112,10 +112,10 @@ function_body_length:
   warning: 20
   error: 100
 
-# custom_rules:
-#   weak_self_closure:
-#   included: - ".*\\.swift"
-#   name: "Use weak self in closures"
-#   message: "Use weak self when create a closure."
-#   regex: "\\{\\s*[^\\[]{0,50}\\s+\\bin\\b([a-zA-Z\\\\.\\(\\)\\[\\{\\}\\>\\/\\=]|\\s)+(self)[^!]"
-#   severity: error
+custom_rules:
+  weak_self_closure:
+  included: "*.swift"
+  name: "Use weak self in closures"
+  message: "Use weak self when create a closure."
+  regex: "\\{\\s*[^\\[]{0,50}\\s+\\bin\\b([a-zA-Z\\\\.\\(\\)\\[\\{\\}\\>\\/\\=]|\\s)+(self)[^!]"
+  severity: error
